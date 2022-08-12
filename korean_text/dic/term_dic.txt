@@ -1,0 +1,8 @@
+# # is a comment.
+# Dictionary is written in key(any) tab value(korean) format. Follow the example below
+# 02-0000-0000	공이 공공공공 공공공공
+02-2122-5008	공이 다시 이일이이 다시 오공공팔
+1~2	일에서 이
+067	공육칠
+0000-0000	공공공공 다시 공공공공
+재무제표3개년	재무제표 삼개년

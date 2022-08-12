@@ -1,0 +1,7 @@
+# # is a comment.
+# Dictionary is written in key(english) tab value(korean) format. Follow the example below
+# saltlux	솔트룩스
+SNS	에스앤에스
+KTX	케이티엑스
+SRT	에스알티
+saltlux	솔트룩스

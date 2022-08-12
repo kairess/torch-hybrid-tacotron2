@@ -1,0 +1,9 @@
+{
+  "eng_dic": "eng_dic.txt",
+  "term_dic": "term_dic.txt",
+  "unit_dic": "unit_dic.txt",
+  "upper_to_kor_dic": "default/upper_to_kor_dic.txt",
+  "num_to_chinese_dic": "default/num_to_chinese_pronunce_dic.txt",
+  "num_to_native_dic": "default/num_to_native_pronunce_dic.txt",
+  "native_unit_list": "native_unit_list.txt"
+}

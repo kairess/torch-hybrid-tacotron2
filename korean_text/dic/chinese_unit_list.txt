@@ -1,0 +1,11 @@
+# # is a comment.
+# list is written in value(korean) format. Follow the example below
+# 년, 월, 일, 명(한자계 수사가 어울리는 단위 : 이천십구년, 삼월, 팔일, 열네명)
+년
+월
+일
+인
+세
+박
+개월
+시

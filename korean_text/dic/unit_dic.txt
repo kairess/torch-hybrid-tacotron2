@@ -1,0 +1,117 @@
+# # is a comment.
+# Dictionary is written in key(unit) tab value(korean) format. Follow the example below
+# m	미터
+
+# math symbol
+#%	퍼센트
+%	프로
+#.	점
+
+# byte
+byte	바이트
+gb	기가바이트
+gbyte	기가바이트
+kb	킬로바이트
+kbyte	킬로바이트
+mb	메가바이트
+mbyte	메가바이트
+pbyte	페타바이트
+tbyte	테라바이트
+tb	테라바이트
+ybyte	요타바이트
+zbyte	제타바이트
+ebyte	엑사바이트
+
+# currency
+USD	달러
+KRW	원
+VND	동
+JPY	엔
+CNY	위안
+
+# frequency
+Hz	헤르츠
+kHz	킬로헤르츠
+kMc	킬로메가사이클
+Mc	메가사이클
+MHz	메가헤르츠
+# Length
+cm	센티미터
+dam	데카미터
+ft	피트
+inch	인치
+km	킬로미터
+kpc	킬로파아섹
+m	미터
+mil	밀
+mile	마일
+mm	밀리미터
+mμ	밀리마이크론
+nm	나노미터
+yd	야드
+μ	마이크론
+μm	마이크론미터
+μμ	마이크로마이크론
+dm	데시미터
+Oc	옥타브
+
+# pressure
+atm	기압
+Pa	파스칼
+hPa	헥토파스칼
+MPa	메가파스칼
+kPa	킬로파스칼
+mmH₂O	수주밀리미터
+psi	프사이
+
+# speed
+ft/h	피트퍼아워
+ft/s	피트퍼세크
+in/h	인치퍼아워
+in/s	인치퍼세크
+km/h	킬로미터퍼아워
+km/s	킬로미터퍼세크
+kn	노트
+m/h	미터퍼아워
+m/s	미터퍼세크
+mach	마하
+mi/h	마일퍼아워
+mi/s	마일퍼세크
+
+# Temperature
+°	도
+°C	도씨
+℉	화씨
+
+# Volume
+cc	씨씨
+cl	센치리터
+ml	밀리리터
+dl	데시리터
+kl	킬로리터
+L	리터
+cm³	세제곱센티미터
+in³	세제곱인치
+ft³	세제곱피트
+yd³	세제곱야드
+gal	갤런
+bbl	배럴
+oz	온스
+m³	세제곱미터
+
+# weight
+mg	밀리그램
+g	그램
+kg	킬로그램
+t	톤
+kt	킬로톤
+gr	그레인
+lb	파운드
+
+# width
+ac	에이커
+ha	헥타르
+a	아르
+m²	제곱미터
+yd²	제곱야드
+ft²	제곱피트
