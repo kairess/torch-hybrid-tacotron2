@@ -7,7 +7,7 @@ import struct
 import time
 import re
 import os
-import setproctitle
+# import setproctitle
 import base64
 
 from text import text_to_sequence, sequence_to_text
@@ -29,6 +29,8 @@ import threading
 
 
 app = Flask(__name__)
+
+device = 'cuda' # cpu
 
 loaded_model = None
 loaded_vocoder = None
@@ -154,7 +156,7 @@ def setOutput(result, errorCode=0, errorMessage=''):
 
 
 def _load_model(ckpt_pth):
-	ckpt_dict = torch.load(ckpt_pth)
+	ckpt_dict = torch.load(ckpt_pth, map_location=torch.device(device))
 	model = Tacotron2()
 	model.load_state_dict(ckpt_dict['model'])
 	model = mode(model, True).eval()
@@ -163,11 +165,11 @@ def _load_model(ckpt_pth):
 	return model
 
 def _load_vocoder(ckpt_pth):
-	ckpt_dict = torch.load(ckpt_pth)
+	ckpt_dict = torch.load(ckpt_pth, map_location=torch.device(device))
 	vocoder = WaveGlow()
 	vocoder.load_state_dict(ckpt_dict['model'])
 	vocoder = vocoder.remove_weightnorm(vocoder)
-	vocoder.cuda().eval()
+	vocoder.to(device).eval()
 
 	denoiser = Denoiser(vocoder, 0.1)
 	return vocoder, denoiser
@@ -180,8 +182,8 @@ if __name__ == '__main__':
 	parser.add_argument('--vocoder_path', type=str, required=False, default='logs/model/vocoder.ckpt')
 	args = parser.parse_args()
 
-	proc_name = 'tts-proc-{0}-port-{1}'.format('kyeongsang', args.port)
-	setproctitle.setproctitle(proc_name)
+	# proc_name = 'tts-proc-{0}-port-{1}'.format('kyeongsang', args.port)
+	# setproctitle.setproctitle(proc_name)
 
 	loaded_model = _load_model(args.model_path)
 	loaded_vocoder, loaded_denoiser = _load_vocoder(args.vocoder_path)
