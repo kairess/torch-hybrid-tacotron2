@@ -73,7 +73,7 @@ class hparams:
 	################################
 	# Train                        #
 	################################
-	is_cuda = True
+	is_cuda = False
 	pin_mem = True
 	n_workers = 8
 	lr = 2e-3

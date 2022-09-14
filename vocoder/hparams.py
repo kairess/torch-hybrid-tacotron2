@@ -2,7 +2,7 @@
 
 class hparams:
     # 학습용 설정
-    is_cuda = True
+    is_cuda = False
     gpu_id = '1'
     use_benchmark = True
     n_workers = 8
